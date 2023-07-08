@@ -1,0 +1,45 @@
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 10px;
+  margin: 10px;
+}
+
+.game div {
+  border: 1px solid #fff;
+  cursor: pointer;
+ 
+}
+
+.square{
+  padding: 10px 20px; 
+  text-align: center; 
+  font-size: 1.5em;
+  height: 55px;
+  width: 55px;
+}
+
+.turn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.is-selected{
+  background: rgb(0, 162, 255);
+  animation: animSelected 3s ease-in-out infinite;
+}
+@keyframes animSelected {
+  0%{
+    background: rgb(0, 162, 255);
+  }
+
+  50%{
+    background: rgb(0, 109, 109);
+  }
+
+  100%{
+    background: rgb(0, 162, 255);
+  }
+}
